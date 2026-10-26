@@ -129,20 +129,28 @@ h1 { margin-top: 24px; font-size: clamp(44px, 5.7vw, 73px); font-weight: 600; }
 .tag-list span { padding: 6px 9px; border: 1px solid var(--line); border-radius: 4px; color: #bdc8d6; font-size: 9px; }
 .project-link { display: inline-flex; gap: 35px; align-items: center; margin-top: 28px; padding-bottom: 7px; border-bottom: 1px solid var(--cyan); font-size: 11px; font-weight: 700; }
 .project-link span { color: var(--cyan); }
-.contact-section { padding: 95px 0; border-block: 1px solid var(--line); background: radial-gradient(ellipse at 10% 80%,rgba(58,129,188,.10),transparent 45%),#0e1118; }
-.contact-inner { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 80px; }
-.contact-copy { max-width: 400px; margin-top: 19px; color: var(--muted); font-size: 13px; line-height: 1.9; }
-.contact-card { padding: 28px; border: 1px solid var(--line); border-radius: 10px; background: rgba(255,255,255,.025); }
-.contact-card-label { display: block; color: var(--muted); font-size: 9px; letter-spacing: 1.8px; margin-bottom: 17px; }
-.email-link { display: flex; align-items: center; justify-content: space-between; gap: 12px; font: 500 clamp(13px,1.6vw,18px) var(--font-heading); overflow-wrap: anywhere; }
-.email-link span, .github-link > span:last-child { color: var(--cyan); }
-.copy-email { margin-top: 13px; padding: 0; border: 0; background: transparent; color: var(--muted); font-size: 10px; cursor: pointer; }
-.copy-email span { margin-left: 5px; }
-.copy-email:hover { color: var(--cyan); }
-.contact-card-line { height: 1px; background: var(--line); margin: 23px 0; }
-.github-link { display: flex; align-items: center; gap: 10px; font-size: 11px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .github-link > span:last-child { margin-left: auto; }
-.github-mark { width: 29px; height: 29px; display: grid; place-items: center; border-radius: 7px; background: #202b39; color: var(--text); font: 700 9px var(--font-heading); }
+
+
+
 .footer { min-height: 100px; display: flex; align-items: center; gap: 25px; }
 .footer p { color: var(--muted); font-size: 10px; }
 .back-top { margin-left: auto; color: var(--muted); font-size: 9px; letter-spacing: 1px; }
@@ -156,7 +164,7 @@ h1 { margin-top: 24px; font-size: clamp(44px, 5.7vw, 73px); font-weight: 600; }
   .hero-visual { transform: scale(.9); }
   .skills-grid { grid-template-columns: repeat(3,1fr); }
   .about-grid { gap: 45px; }
-  .contact-inner { gap: 35px; }
+  
   .project-art { padding: 24px; }
   .art-caption { left: 24px; }
   .project-info { padding: 30px; }
@@ -192,10 +200,12 @@ h1 { margin-top: 24px; font-size: clamp(44px, 5.7vw, 73px); font-weight: 600; }
   .project-art { min-height: 290px; border-right: 0; border-bottom: 1px solid var(--line); padding: 24px; }
   .project-info { padding: 28px 23px 32px; }
   .project-info h3 { font-size: 29px; }
-  .contact-section { padding: 75px 0; }
-  .contact-inner { grid-template-columns: 1fr; gap: 35px; }
-  .contact-card { padding: 22px 18px; }
-  .email-link { font-size: 14px; }
+  
+  
+  
+  
+  
+  
   .footer { padding-top: 25px; padding-bottom: 25px; flex-wrap: wrap; gap: 14px; }
   .footer p { order: 3; width: 100%; }
   .back-top { margin-left: auto; }
@@ -204,4 +214,116 @@ h1 { margin-top: 24px; font-size: clamp(44px, 5.7vw, 73px); font-weight: 600; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
   .reveal { opacity: 1; transform: none; }
+}
+
+/* Contact section */
+.contact-section {
+  padding: 95px 0;
+  border-block: 1px solid var(--line);
+  background: radial-gradient(ellipse at 10% 80%, rgba(58,129,188,.10), transparent 45%), #0e1118;
+}
+.contact-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 80px;
+}
+.contact-profile-block { min-width: 0; }
+.contact-photo {
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 25px;
+  object-fit: cover;
+  object-position: center 25%;
+  border-radius: 50%;
+  border: 3px solid var(--cyan);
+  box-shadow: 0 0 0 6px rgba(123,229,219,.07), 0 0 25px rgba(123,229,219,.15);
+}
+.contact-profile-block h2 {
+  margin-top: 15px;
+  font-size: clamp(34px, 4vw, 49px);
+}
+.contact-copy {
+  max-width: 400px;
+  margin-top: 19px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.9;
+}
+.contact-location { margin-top: 20px; color: var(--muted); font-size: 12px; }
+.contact-card {
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(255,255,255,.025);
+}
+.contact-card-label {
+  display: block;
+  color: var(--muted);
+  font-size: 9px;
+  letter-spacing: 1.8px;
+  margin-bottom: 10px;
+}
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 17px 0;
+  border-bottom: 1px solid var(--line);
+  transition: color .2s, transform .2s;
+}
+.contact-item:last-of-type { border-bottom: 0; }
+.contact-item:hover { color: var(--cyan); transform: translateX(4px); }
+.contact-item > span:first-child {
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
+  display: grid;
+  place-items: center;
+  border-radius: 9px;
+  background: rgba(123,229,219,.1);
+  color: var(--cyan);
+  font-weight: 700;
+}
+.contact-item > span:nth-child(2) {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  font-size: 12px;
+}
+.contact-item small {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--muted);
+  font-size: 10px;
+}
+.contact-item > span:last-child { margin-left: auto; color: var(--cyan); }
+.contact-card-line { height: 1px; margin: 12px 0 16px; background: var(--line); }
+.copy-email {
+  margin-top: 2px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font-size: 10px;
+  cursor: pointer;
+}
+.copy-email span { margin-left: 5px; }
+.copy-email:hover { color: var(--cyan); }
+
+@media (max-width: 900px) {
+  .contact-inner { gap: 35px; }
+}
+@media (max-width: 680px) {
+  .contact-section { padding: 75px 0; }
+  .contact-inner { grid-template-columns: 1fr; gap: 35px; }
+  .contact-profile-block { text-align: center; }
+  .contact-photo { width: 105px; height: 105px; margin-inline: auto; }
+  .contact-copy { margin-inline: auto; }
+  .contact-card { padding: 22px 18px; }
+  .contact-item { gap: 10px; }
+  .footer { padding-top: 25px; padding-bottom: 25px; flex-wrap: wrap; gap: 14px; }
+  .footer p { order: 3; width: 100%; }
+  .back-top { margin-left: auto; }
+  .copyright { width: 100%; }
 }
