@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Arul Kumaran KS, student developer.">
+  <title>Arul Kumaran KS | Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Arul home"><span class="brand-mark">A</span><span>ARUL<span class="brand-dot">.</span></span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact" class="nav-contact">Let's talk <span>↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> STUDENT DEVELOPER · OPEN TO LEARNING</p>
+        <h1>Building ideas<br>into <span class="gradient-text">digital reality.</span></h1>
+        <p class="hero-description">Hey, I'm <strong>Arul Kumaran KS</strong> — a student developer exploring the web, writing code, and creating useful digital experiences.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <span>↘</span></a>
+          <a class="button button-secondary" href="mailto:k.s.arulkumaran583@gmail.com">Contact me <span>↗</span></a>
+        </div>
+        <div class="hero-meta">
+          <div><span class="meta-number">05</span><span class="meta-label">Core technologies</span></div>
+          <div class="meta-divider"></div>
+          <div><span class="meta-number">01</span><span class="meta-label">Featured project</span></div>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="portrait-frame">
+          <img src="images/profile.jpg" alt="Portrait of Arul Kumaran KS" class="portrait" onerror="this.style.display='none';document.getElementById('portraitFallback').style.display='grid'">
+          <div class="portrait-fallback" id="portraitFallback">AK<span>KS</span></div>
+          <div class="portrait-shade"></div>
+          <div class="portrait-label"><span class="label-line"></span><span>CURIOUS MIND. CREATIVE CODE.</span></div>
+        </div>
+        <div class="floating-card code-card"><span class="code-icon">&lt;/&gt;</span><div><strong>Code</strong><small>Learn · Build · Improve</small></div></div>
+        <div class="floating-card availability-card"><span class="availability-icon">✳</span><div><strong>Always learning</strong><small>One project at a time</small></div></div>
+        <div class="visual-index">01 <span>/</span> 04</div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Technologies">
+      <div class="ticker-track">
+        <span>HTML</span><i>✳</i><span>CSS</span><i>✳</i><span>JAVASCRIPT</span><i>✳</i><span>JAVA</span><i>✳</i><span>PYTHON</span><i>✳</i>
+        <span>HTML</span><i>✳</i><span>CSS</span><i>✳</i><span>JAVASCRIPT</span><i>✳</i><span>JAVA</span><i>✳</i><span>PYTHON</span><i>✳</i>
+      </div>
+    </section>
+
+    <section class="section container" id="about">
+      <div class="section-heading reveal"><p class="eyebrow">01 / ABOUT ME</p><h2>Learning by <span class="gradient-text">building.</span></h2></div>
+      <div class="about-grid">
+        <p class="about-lead reveal">I enjoy turning ideas into practical projects and learning how technology can solve everyday problems.</p>
+        <div class="about-details reveal">
+          <p>I'm developing my skills across front-end web technologies and programming languages. I believe in staying curious, practising consistently, and improving with every project.</p>
+          <div class="detail-row"><span>FOCUS</span><strong>Web development & programming</strong></div>
+          <div class="detail-row"><span>APPROACH</span><strong>Learn, experiment, iterate</strong></div>
+          <div class="detail-row"><span>EMAIL</span><a href="mailto:k.s.arulkumaran583@gmail.com">k.s.arulkumaran583@gmail.com ↗</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-heading reveal"><p class="eyebrow">02 / TOOLKIT</p><h2>Tools I work <span class="gradient-text">with.</span></h2><p class="section-subtitle">A growing toolkit for bringing ideas to life.</p></div>
+        <div class="skills-grid">
+          <article class="skill-card reveal"><span class="skill-number">01</span><div class="skill-symbol html-symbol">5</div><h3>HTML</h3><p>Building clear, structured web pages.</p><div class="skill-track"><span style="width:82%"></span></div></article>
+          <article class="skill-card reveal"><span class="skill-number">02</span><div class="skill-symbol css-symbol">✳</div><h3>CSS</h3><p>Styling responsive and engaging layouts.</p><div class="skill-track"><span style="width:76%"></span></div></article>
+          <article class="skill-card reveal"><span class="skill-number">03</span><div class="skill-symbol js-symbol">JS</div><h3>JavaScript</h3><p>Adding interaction and dynamic behaviour.</p><div class="skill-track"><span style="width:68%"></span></div></article>
+          <article class="skill-card reveal"><span class="skill-number">04</span><div class="skill-symbol java-symbol">♨</div><h3>Java</h3><p>Practising object-oriented programming.</p><div class="skill-track"><span style="width:65%"></span></div></article>
+          <article class="skill-card reveal"><span class="skill-number">05</span><div class="skill-symbol python-symbol">Py</div><h3>Python</h3><p>Exploring programming and problem-solving.</p><div class="skill-track"><span style="width:64%"></span></div></article>
+        </div>
+        <p class="skills-note">Skill bars are visual placeholders. Adjust them to reflect actual proficiency.</p>
+      </div>
+    </section>
+
+    <section class="section container" id="projects">
+      <div class="section-heading reveal"><p class="eyebrow">03 / SELECTED WORK</p><h2>Things I've <span class="gradient-text">built.</span></h2><p class="section-subtitle">A featured project from my development journey.</p></div>
+      <article class="project-card reveal">
+        <div class="project-art">
+          <div class="browser-top"><span></span><span></span><span></span><small>student.profile</small></div>
+          <div class="project-mock">
+            <div class="mock-sidebar"><div class="mock-avatar">AK</div><span></span><span></span><span></span></div>
+            <div class="mock-content"><div class="mock-line long"></div><div class="mock-line short"></div><div class="mock-stat-row"><div></div><div></div><div></div></div><div class="mock-panel"></div></div>
+          </div>
+          <span class="art-caption">PROJECT / 001</span>
+        </div>
+        <div class="project-info">
+          <p class="project-type">WEB APPLICATION <span>↗</span></p>
+          <h3>Digital Student ID &amp;<br>Profile Management System</h3>
+          <p>A student-focused project designed around digital identity and profile management. Explore the repository to see the implementation and technologies used.</p>
+          <div class="tag-list"><span>Web Development</span><span>Student Profile</span><span>GitHub</span></div>
+          <a class="project-link" href="https://github.com/ArulKumaran2007/Digital-Student-ID-and-Profile-Management-System" target="_blank" rel="noopener noreferrer">View source code <span>↗</span></a>
+        </div>
+      </article>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container contact-inner reveal">
+        <div><p class="eyebrow">04 / GET IN TOUCH</p><h2>Have an idea?<br><span class="gradient-text">Let's connect.</span></h2><p class="contact-copy">I'm always open to learning, collaboration, and interesting conversations about technology.</p></div>
+        <div class="contact-card"><span class="contact-card-label">SEND ME A MESSAGE</span><a class="email-link" href="mailto:k.s.arulkumaran583@gmail.com">k.s.arulkumaran583@gmail.com <span>↗</span></a><button class="copy-email" id="copyEmail" data-email="k.s.arulkumaran583@gmail.com">Copy email address <span>⧉</span></button><div class="contact-card-line"></div><a class="github-link" href="https://github.com/ArulKumaran2007" target="_blank" rel="noopener noreferrer"><span class="github-mark">GH</span> Explore my GitHub <span>↗</span></a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container"><a class="brand footer-brand" href="#home"><span class="brand-mark">A</span><span>ARUL<span class="brand-dot">.</span></span></a><p>Designed with curiosity &amp; built with code.</p><a href="#home" class="back-top">BACK TO TOP ↑</a><span class="copyright">© <span id="year"></span> Arul Kumaran KS</span></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite">Email copied!</div>
+  <script src="script.js"></script>
+</body>
+</html>
